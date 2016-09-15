@@ -1,0 +1,121 @@
+.clearfix {
+  clear: both; }
+
+body {
+  max-width: 1170px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  right: 0;
+  left: 0;
+  margin: 0 auto; }
+
+.portafolio .headerSection {
+  border-bottom: 1px solid #000;
+  margin: 20px 0; }
+  .portafolio .headerSection h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold; }
+
+.portafolio .menu {
+  list-style: none;
+  vertical-align: middle;
+  -webkit-padding-start: 0;
+  margin-top: 10px; }
+  .portafolio .menu li:last-child {
+    margin-right: 0; }
+  .portafolio .menu li {
+    display: inline;
+    margin-right: 20px; }
+    .portafolio .menu li a {
+      color: #bd0011; }
+    .portafolio .menu li a:focus,
+    .portafolio .menu li a:hover {
+      text-decoration: none; }
+
+.portafolio .profile img {
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0 0 10px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  box-sizing: content-box; }
+
+.portafolio .sectionTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 20px; }
+
+.portafolio .sectionText {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 20px; }
+  .portafolio .sectionText label {
+    font-weight: normal;
+    margin: 0;
+    display: inline; }
+  .portafolio .sectionText a {
+    font-weight: normal;
+    margin: 0;
+    display: inline-block; }
+
+.portafolio .skills {
+  text-align: center; }
+
+.portafolio .open > .dropdown-menu {
+  display: block; }
+
+.portafolio span.languagesCtn {
+  display: inline;
+  position: absolute; }
+  .portafolio span.languagesCtn li {
+    display: list-item;
+    margin-right: 0; }
+
+.portafolio .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 13px;
+  text-align: left;
+  background-color: #edecec;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box; }
+  .portafolio .dropdown-menu .divider {
+    height: 1px;
+    margin: 8px 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.08); }
+  .portafolio .dropdown-menu li a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333333;
+    white-space: nowrap; }
+  .portafolio .dropdown-menu li a:hover,
+  .portafolio .dropdown-menu li a:focus {
+    text-decoration: none;
+    color: #333333;
+    background-color: rgba(0, 0, 0, 0.075); }
+
+.portafolio .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+  top: 10px; }
+
+@media (min-width: 768px) {
+  .headerSection .menu {
+    text-align: right;
+    margin-top: 0; } }

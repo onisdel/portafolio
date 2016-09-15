@@ -1,0 +1,206 @@
+/****CustomerSessionBar****/
+#_customerSessionBar {
+  font-size: .750em;
+  padding: 8px 0;
+  border-bottom: 1px solid #4D565D;
+  color: #d2b378;
+  font-weight: 500;
+  /*display: none;*/
+  /*height: 19px;*/
+  height: 59px;
+  text-transform: none;
+  /**** Voice Bio Section ****/
+  /*li.first.left {*/
+  /*padding-right: 7px;*/
+  /*padding-left: 0;*/
+  /*}*/ }
+  #_customerSessionBar .brace {
+    position: relative;
+    text-align: center;
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: 0 auto; }
+  #_customerSessionBar ul {
+    padding: 0; }
+  #_customerSessionBar li {
+    padding: 0 15px;
+    list-style: none;
+    line-height: 20px;
+    white-space: nowrap;
+    /*      text-overflow: ellipsis;    */
+    overflow: hidden;
+    text-align: left;
+    font-family: UniversNextforHSBC-Medium, Univers, Helvetica, Arial, sans-serif !important;
+    font-size: 12px; }
+  #_customerSessionBar li.first.left {
+    height: 40px; }
+  #_customerSessionBar li.last {
+    height: 200px; }
+  #_customerSessionBar li:nth-child(2) {
+    width: 266px;
+    max-width: 266px; }
+  #_customerSessionBar li:nth-child(3),
+  #_customerSessionBar li:nth-child(4),
+  #_customerSessionBar li:nth-child(5),
+  #_customerSessionBar li:nth-child(6),
+  #_customerSessionBar li:nth-child(7) {
+    width: 188px;
+    max-width: 188px; }
+  #_customerSessionBar #per_pinVerification.failed i {
+    color: #F59434 !important; }
+  #_customerSessionBar span {
+    font-weight: 400;
+    color: #ededed;
+    text-transform: capitalize;
+    /*    font-size: 12px;
+        font-family: UniversNextforHSBC-Regular, Univers, Helvetica, Arial, sans-serif;	*/ }
+  #_customerSessionBar .customerSessionRefreshButton {
+    cursor: pointer;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: all 0s; }
+  #_customerSessionBar .customerSessionRefreshButton.loading {
+    -webkit-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+    transition: all 3s linear;
+    display: block; }
+  #_customerSessionBar .first {
+    overflow: hidden;
+    padding: 0; }
+  #_customerSessionBar .last {
+    padding: 0;
+    text-align: right;
+    overflow: visible; }
+  #_customerSessionBar .last > * {
+    display: inline-block;
+    position: relative; }
+  #_customerSessionBar .button {
+    margin: 0;
+    line-height: 40px;
+    padding: 0 10px; }
+  #_customerSessionBar #per_verbalQuiz_label.dijitButtonText.twoLevel {
+    padding: 0 20px 0 7px; }
+  #_customerSessionBar .dijitVoiceBioSectionButton {
+    width: 42px; }
+  #_customerSessionBar .dijitVoiceBioSectionButton.active {
+    background-color: #FFF; }
+    #_customerSessionBar .dijitVoiceBioSectionButton.active .voiceBioDropDownPopup {
+      display: block;
+      margin-left: -148px;
+      background-color: #FFF;
+      font-size: 1em;
+      position: absolute;
+      text-align: left;
+      width: 190px;
+      color: #000000;
+      z-index: 1; }
+      #_customerSessionBar .dijitVoiceBioSectionButton.active .voiceBioDropDownPopup .voicerow:first-child {
+        padding-top: 15px; }
+      #_customerSessionBar .dijitVoiceBioSectionButton.active .voiceBioDropDownPopup .voicerow {
+        padding-left: 10px;
+        padding-bottom: 15px;
+        white-space: pre-wrap;
+        text-transform: none; }
+      #_customerSessionBar .dijitVoiceBioSectionButton.active .voiceBioDropDownPopup .voicerow::first-letter {
+        text-transform: uppercase; }
+      #_customerSessionBar .dijitVoiceBioSectionButton.active .voiceBioDropDownPopup .voiceBioNode {
+        border-top: 1px solid #B6B7B6;
+        border-bottom: 1px solid #B6B7B6;
+        cursor: pointer;
+        height: 40px; }
+      #_customerSessionBar .dijitVoiceBioSectionButton.active .voiceBioDropDownPopup .voicerow:hover,
+      #_customerSessionBar .dijitVoiceBioSectionButton.active .voiceBioDropDownPopup .voiceBioNode:hover {
+        background-color: #EDEDED; }
+      #_customerSessionBar .dijitVoiceBioSectionButton.active .voiceBioDropDownPopup .voiceBioNode span.title {
+        width: 75%;
+        display: inline-block;
+        color: #000000;
+        padding-left: 12px; }
+      #_customerSessionBar .dijitVoiceBioSectionButton.active .voiceBioDropDownPopup .voiceBioNode .icon-refresh {
+        font-size: 1.2em;
+        display: inline-block;
+        color: #000000; }
+  #_customerSessionBar .dijitVoiceBioSectionButton .voiceBioDropDownPopup {
+    display: none; }
+  #_customerSessionBar i,
+  #_customerSessionBar #per_pinVerification i {
+    font-size: 1.417em;
+    color: #ffffff;
+    vertical-align: middle; }
+
+/*[dir = 'rtl'] #_customerSessionBar li.first.left {*/
+/*padding-left: 7px;*/
+/*padding-right: 0;*/
+/*}*/
+body[dir="rtl"] #_customerSessionBar li {
+  text-align: right; }
+
+body[dir="rtl"] #_customerSessionBar li.last {
+  text-align: left; }
+
+body[dir="rtl"].sfe2 #_customerSessionBar ul {
+  padding: 0; }
+
+body[dir="rtl"].sfe2 #_customerSessionBar span {
+  margin-left: 1px; }
+
+/*{ padding: 0 61px; overflow: hidden; }*/
+#vq_status_container {
+  position: absolute;
+  right: 7px;
+  top: 0;
+  bottom: 0;
+  width: 1em;
+  font-size: 9px; }
+
+#high {
+  height: 50%;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+  top: 9px; }
+
+#medium {
+  height: 50%;
+  vertical-align: bottom;
+  text-align: center; }
+
+@media (max-width: 1200px) {
+  .sfe2 #_customerSessionBar li {
+    padding: 0 20px; }
+  .sfe2 #_customerSessionBar li.last {
+    padding-right: 0; }
+  .sfe2 #_customerSessionBar li.first {
+    padding-left: 0; }
+  .sfe2 #_customerSessionBar li > span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block; }
+  .sfe2 #_customerSessionBar li.last > span {
+    display: inline-block; }
+  .sfe2 #_customerSessionBar li:nth-child(2),
+  .sfe2 #_customerSessionBar li:nth-child(3),
+  .sfe2 #_customerSessionBar li:nth-child(4),
+  .sfe2 #_customerSessionBar li:nth-child(5),
+  .sfe2 #_customerSessionBar li:nth-child(6),
+  .sfe2 #_customerSessionBar li:nth-child(7) {
+    width: 105px; } }
+
+@media (max-width: 1032px) {
+  #_customerSessionBar .brace {
+    min-width: 700px;
+    max-width: 1100px;
+    margin: 0; }
+  .sfe2 #_overflow #_customerSessionBar .brace {
+    min-width: 700px;
+    max-width: 1100px; }
+  .sfe2 #_customerSessionBar li:nth-child(2),
+  .sfe2 #_customerSessionBar li:nth-child(3),
+  .sfe2 #_customerSessionBar li:nth-child(4),
+  .sfe2 #_customerSessionBar li:nth-child(5),
+  .sfe2 #_customerSessionBar li:nth-child(6),
+  .sfe2 #_customerSessionBar li:nth-child(7) {
+    max-width: 120px; }
+  .sfe2 #_customerSessionBar li.call-status {
+    display: none; } }

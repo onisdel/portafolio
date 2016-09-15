@@ -1,0 +1,73 @@
+/****SystemBar****/
+#_systemBar {
+  background: #000000;
+  color: #ffffff;
+  font-size: .625em;
+  font-weight: 300;
+  vertical-align: middle;
+  position: relative; }
+  #_systemBar ul {
+    margin: 0 36px 0 0;
+    /* DH changed this overflow: auto; */
+    overflow: hidden; }
+  #_systemBar li {
+    float: right;
+    padding: 0 2%;
+    line-height: 27px;
+    list-style: none;
+    height: 26px; }
+  #_systemBar li.last {
+    padding: 0; }
+  #_systemBar img {
+    height: 12px;
+    width: 18px;
+    padding: 7px 5px;
+    float: left;
+    margin-top: 1px; }
+  #_systemBar span {
+    font-weight: 500;
+    text-transform: uppercase; }
+  #_systemBar i {
+    font-size: 8px;
+    padding: 0 0 0 10px; }
+  #_systemBar i.normal {
+    color: #20AC49; }
+  #_systemBar i.shadow {
+    color: #db0011; }
+
+#_systemBar.closed {
+  transition: all linear 0.5s;
+  margin-top: -26px; }
+
+#_systemBar.open {
+  transition: all linear 0.5s;
+  margin-top: 0; }
+
+body[dir="rtl"].sfe2 #_systemBar li {
+  padding: 0 1.7%; }
+
+#_systemBar li:first-child,
+body[dir="rtl"].sfe2 #_systemBar li:first-child {
+  padding-right: 0; }
+
+#_systemBar li:last-child,
+body[dir="rtl"].sfe2 #_systemBar li:last-child {
+  padding-left: 0; }
+
+body[dir="rtl"].sfe2 #_systemBar i {
+  float: right;
+  line-height: 26px; }
+
+@media (min-width: 1033px) and (max-width: 1100px) {
+  .sfe2 #_systemBar {
+    width: 1100px; } }
+
+@media (min-width: 1032px) and (max-width: 1100px) {
+  .sfe2 #_overflow #_systemBar .grid {
+    min-width: 700px;
+    max-width: 1100px; } }
+
+@media (min-width: 961px) {
+  #_systemBar li,
+  body[dir="rtl"].sfe2 #_systemBar li {
+    padding: 0 18px; } }
